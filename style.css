@@ -1,0 +1,140 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fallback fonts */
+    line-height: 1.6;
+    color: #404040; /* Default text color as per redline for descriptions */
+    background-color: #f8f8f8; /* Light background for the whole page */
+}
+
+/* --- Header/Banner Section --- */
+.banner-section {
+    width: 100%;
+    /* Fixed height as per redline spec */
+    height: 326px; 
+    overflow: hidden; /* Ensures image and text stay within bounds */
+    position: relative; /* Establishes positioning context for children */
+}
+
+.banner-section .image-container {
+    width: 100%;
+    height: 100%; /* Make container fill the banner section */
+    position: relative;
+}
+
+.banner-section .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container, cropping if necessary */
+    display: block; /* Removes any default extra space below the image */
+}
+
+.banner-section .text-overlay {
+    position: absolute; /* Position relative to .banner-section */
+    top: 50%; /* Moves the top edge of the text container to the vertical center */
+    left: 50%; /* Moves the left edge to the horizontal center */
+    transform: translate(-50%, -50%); /* Shifts the text back by half its own width/height to truly center it */
+    text-align: center; /* Centers the text horizontally within the overlay div */
+    width: 100%; /* Ensures the overlay spans full width to center text correctly */
+}
+
+.banner-section .text-overlay h1 {
+    font-family: Helvetica;
+    font-size: 100px; 
+    font-weight: bold;
+    color: khaki; 
+    margin: 0; /* Remove default margin for h1 */
+    padding: 0; /* Remove default padding for h1 */
+    white-space: nowrap; /* Prevents text from wrapping onto multiple lines unnecessarily */
+}
+
+/* --- Main Content Sections --- */
+.main-content {
+    max-width: 960px; /* Max width for content sections as implied by redline text block width */
+    margin: 40px auto; /* Top/bottom margin and center horizontally */
+    padding: 0 20px; /* Some horizontal padding to prevent content from touching screen edges */
+}
+
+.product-category {
+    margin-bottom: 50px; /* Space between product categories */
+    text-align: left; /* Center images and product descriptions */
+}
+
+.product-category:last-child {
+    margin-bottom: 0; /* No bottom margin for the last category */
+}
+
+
+.category-heading-1 {
+    background-color: mediumspringgreen;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Helvetica;
+    padding: 10px 0; /* Top and bottom padding */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.category-heading-2 {
+    background-color: lightcoral;
+     color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Helvetica;
+    padding: 10px 0; /* Top and bottom padding */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.category-heading-3 {
+    background-color: skyblue;
+     color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Helvetica;
+    padding: 10px 0; /* Top and bottom padding */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.product-category img {
+    max-width: 100%; /* Ensures images scale down on smaller screens */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below image */
+    margin: 20px auto 20px 0; /* Center image and add vertical margin */
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: black; 
+    margin-bottom: 30px;
+    max-width: 800px; /* Limit paragraph width for readability */
+    margin-left: auto; /* Center paragraph within its container */
+    margin-right: auto; /* Center paragraph within its container */
+}
+
+.product-description .price {
+    font-weight: bold; /* Price text is bold as per redline */
+    font-family: Helvetica;
+    color: blue; /*Price starting at $ in color blue*/
+}
+
+/* --- Footer --- */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9em;
+}
+
